@@ -5,26 +5,26 @@
 class GhaDoctor < Formula
   desc "Diagnose GitHub Actions: flaky jobs, wasted minutes, cache misses, anti-patterns"
   homepage "https://github.com/linnea-bakshi/gha-doctor"
-  version "0.20.1"
+  version "0.21.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.20.1/gha-doctor_0.20.1_darwin_arm64.tar.gz"
-      sha256 "d54b1099ac80b6bb0dc4ccd2a69d8a25a847856b28c7dc3125d3fe8e8f8d6ced"
+      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.21.0/gha-doctor_0.21.0_darwin_arm64.tar.gz"
+      sha256 "410509e921bb12321b2fb67cd09e0540d521953e766a62cf18de2fc90343a688"
     else
-      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.20.1/gha-doctor_0.20.1_darwin_amd64.tar.gz"
-      sha256 "0a840cae0dfb6c97ff77feba510d1793dd1f5bd08c5f6aa2211bfa6f71656520"
+      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.21.0/gha-doctor_0.21.0_darwin_amd64.tar.gz"
+      sha256 "7781a43278e400caee9766cf9c364a10b3b3ec96b7ca4a08de59c320d80a4cc8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.20.1/gha-doctor_0.20.1_linux_arm64.tar.gz"
-      sha256 "987749c074bef3ae4d0868fcaf13fc165c6d0e083e5d1276168ca25cf987bd20"
+      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.21.0/gha-doctor_0.21.0_linux_arm64.tar.gz"
+      sha256 "14a8d6793de624a0bd78ce1fafbc0d3d33732bee3fa3c98c5692ec507f40ff89"
     else
-      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.20.1/gha-doctor_0.20.1_linux_amd64.tar.gz"
-      sha256 "9c1a6cb723ab5cc45e9583f64b3d046aa4bbab1d6c0374fdf025a5ce8e3779c3"
+      url "https://github.com/linnea-bakshi/gha-doctor/releases/download/v0.21.0/gha-doctor_0.21.0_linux_amd64.tar.gz"
+      sha256 "b7ab3086e99ca368f6c76e8318d0b2befed5b15b25942cfb67b57039318ccdb8"
     end
   end
 
